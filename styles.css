@@ -228,3 +228,23 @@ h1,h2{text-wrap:balance}
   .card .big{font-size:5.6rem}
   .hero__art{height:470px}
 }
+
+/* see it in action */
+.seeit{background:linear-gradient(180deg,#eef2ea,var(--cream))}
+.seeit__in{display:grid;grid-template-columns:minmax(0,1fr) 1.2fr;gap:4rem;align-items:center}
+.phone{position:relative;margin:0 auto;width:min(320px,100%);padding:12px;border-radius:44px;background:#15191a;
+  box-shadow:0 0 0 2px #2c3335 inset,0 30px 60px -20px rgba(10,30,20,.55),0 0 0 10px rgba(20,84,58,.08)}
+.phone::before{content:"";position:absolute;top:20px;left:50%;width:70px;height:6px;margin-left:-35px;border-radius:6px;background:#2c3335;z-index:1}
+.phone__screen{border-radius:32px;overflow:hidden;background:#000;padding-top:22px}
+.phone__screen img{width:100%;height:auto}
+.captions{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1.1rem}
+.captions li{display:flex;gap:1rem;align-items:flex-start}
+.cap__suit{flex:none;width:44px;height:58px;border-radius:8px;background:var(--paper);border:1px solid #e3d9bf;box-shadow:0 6px 12px -6px rgba(0,0,0,.3);display:grid;place-items:center;font-size:1.5rem;color:var(--felt)}
+.cap__suit.red{color:var(--red)}
+.captions h3{font-size:1.2rem;margin-bottom:.25em}
+.captions p{margin:0;color:var(--muted)}
+@media (max-width:960px){
+  .seeit__in{grid-template-columns:1fr;gap:2.5rem}
+  .seeit__copy{order:-1}
+  .phone{width:min(290px,100%)}
+}
